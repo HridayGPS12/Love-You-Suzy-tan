@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbf8f4">
+  <meta name="robots" content="noindex, nofollow">
+  <title>For My Suzy-tan — A Love Letter</title>
+  <meta name="description" content="A little love letter for Suzy-tan, Bou, and Wify: our memories, a voice note, and a question for all the tomorrows ahead.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Optimizer - Canonical -->
+  <!-- Optimizer - Custom Meta -->
+  <!-- Optimizer - Open Graph -->
+  <!-- Optimizer - Header Javascripts -->
+  <script>document.documentElement.classList.add('js');</script>
+  <style>
+    :root {
+      --paper: #fbf8f4;
+      --paper-deep: #f3e8e2;
+      --rose: #ecd8d2;
+      --rose-dark: #bd7f82;
+      --wine: #74384e;
+      --wine-dark: #55283a;
+      --ink: #322b2c;
+      --muted: #766b69;
+      --line: rgba(116, 56, 78, .16);
+      --sage: #718176;
+      --display: "DM Serif Display", Georgia, serif;
+      --body: "DM Sans", "Segoe UI", sans-serif;
+      --page-width: 1160px;
+      --section-space: clamp(5rem, 9vw, 8.5rem);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+    body {
+      margin: 0;
+      overflow-x: hidden;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 90% 7%, rgba(236, 216, 210, .48), transparent 30rem),
+        radial-gradient(ellipse at 4% 50%, rgba(233, 224, 214, .26), transparent 26rem),
+        var(--paper);
+      font-family: var(--body);
+      font-size: 16px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; }
+    button, summary { font: inherit; }
+    button:focus-visible, a:focus-visible, summary:focus-visible, audio:focus-visible {
+      outline: 3px solid #bd7f82;
+      outline-offset: 4px;
+    }
+    img { display: block; max-width: 100%; }
+    .shell { width: min(var(--page-width), calc(100% - 3rem)); margin-inline: auto; }
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      border-bottom: 1px solid rgba(116, 56, 78, .09);
+      background: rgba(251, 248, 244, .89);
+      backdrop-filter: blur(14px);
+    }
+    .header-inner {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      color: var(--wine-dark);
+      font-size: .86rem;
+      font-weight: 700;
+      letter-spacing: .035em;
+      text-decoration: none;
+    }
+    .brand-mark {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--wine);
+      font-family: var(--display);
+      font-size: 1.4rem;
+      line-height: 1;
+      background: #fffaf7;
+    }
+    .desktop-nav { display: flex; align-items: center; gap: clamp(1.1rem, 2.4vw, 2rem); }
+    .desktop-nav a, .mobile-nav-panel a {
+      color: var(--muted);
+      font-size: .88rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color .2s ease;
+    }
+    .desktop-nav a:hover, .mobile-nav-panel a:hover { color: var(--wine); }
+    .desktop-nav .nav-cta {
+      padding: .62rem 1rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--wine);
+      background: rgba(255,255,255,.52);
+    }
+    .mobile-nav { display: none; position: relative; }
+    .mobile-nav summary {
+      width: 46px;
+      height: 46px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      color: var(--wine);
+      background: #fffaf7;
+      cursor: pointer;
+      list-style: none;
+      font-size: 1.15rem;
+    }
+    .mobile-nav summary::-webkit-details-marker { display: none; }
+    .mobile-nav-panel {
+      position: absolute;
+      top: calc(100% + .7rem);
+      right: 0;
+      min-width: 210px;
+      display: grid;
+      gap: .2rem;
+      padding: .65rem;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--paper);
+      box-shadow: 0 16px 40px rgba(63, 38, 43, .13);
+    }
+    .mobile-nav-panel a { min-height: 46px; display: flex; align-items: center; padding: 0 .8rem; border-radius: 11px; }
+    .mobile-nav-panel a:hover { background: var(--paper-deep); }
+    .hero {
+      min-height: min(800px, calc(100svh - 78px));
+      display: grid;
+      grid-template-columns: 1fr 1.02fr;
+      align-items: center;
+      gap: clamp(2.5rem, 6.5vw, 6.5rem);
+      padding-block: clamp(4.5rem, 8vw, 7.5rem);
+    }
+    .eyebrow, .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      color: var(--wine);
+      font-size: .73rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
+    .eyebrow::before, .section-label::before {
+      width: 26px;
+      height: 1px;
+      background: var(--rose-dark);
+      content: "";
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: var(--display); font-weight: 400; }
+    h1 {
+      max-width: 620px;
+      margin: 1.1rem 0 1.4rem;
+      font-size: clamp(3.6rem, 7.3vw, 6.8rem);
+      letter-spacing: -.045em;
+      line-height: .99;
+    }
+    h1 em { color: var(--wine); font-weight: 400; }
+    .hero-copy > p {
+      max-width: 520px;
+      margin-bottom: 1.9rem;
+      color: var(--muted);
+      font-size: clamp(1.02rem, 1.5vw, 1.14rem);
+    }
+    .hero-copy strong { color: var(--ink); font-weight: 600; }
+    .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem; }
+    .button {
+      min-height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      padding: .72rem 1.25rem;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      color: white;
+      background: var(--wine);
+      box-shadow: 0 8px 22px rgba(116, 56, 78, .18);
+      font-size: .9rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
+      cursor: pointer;
+    }
+    .button:hover { transform: translateY(-2px); background: var(--wine-dark); box-shadow: 0 11px 26px rgba(116, 56, 78, .25); }
+    .button.secondary {
+      border-color: var(--line);
+      color: var(--wine);
+      background: rgba(255,255,255,.58);
+      box-shadow: none;
+    }
+    .button.secondary:hover { background: white; }
+    .hero-visual { position: relative; padding: 1rem; }
+    .hero-frame {
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.92);
+      border-radius: 22px 22px 150px 22px;
+      background: #eadbd4;
+      box-shadow: 0 24px 70px rgba(69, 44, 46, .14), 0 2px 8px rgba(69, 44, 46, .05);
+    }
+    .hero-frame img { width: 100%; height: auto; }
+    .hero-caption {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      margin: 1rem 0 0 1.1rem;
+      color: var(--muted);
+      font-family: var(--display);
+      font-size: 1.14rem;
+      font-style: italic;
+    }
+    .hero-caption span { color: var(--rose-dark); font-family: var(--body); font-style: normal; }
+    .hero-ornament {
+      position: absolute;
+      top: -1rem;
+      right: -.1rem;
+      width: 82px;
+      height: 82px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(116,56,78,.14);
+      border-radius: 50%;
+      color: var(--wine);
+      background: rgba(251,248,244,.88);
+      font-family: var(--display);
+      font-size: 2.3rem;
+      box-shadow: 0 10px 30px rgba(69, 44, 46, .08);
+      transform: rotate(10deg);
+    }
+    .love-note {
+      position: relative;
+      overflow: hidden;
+      padding-block: clamp(3.6rem, 7vw, 6rem);
+      border-block: 1px solid rgba(116,56,78,.09);
+      background: linear-gradient(110deg, rgba(244,230,225,.76), rgba(251,248,244,.56) 74%);
+      text-align: center;
+    }
+    .love-note::before {
+      position: absolute;
+      top: -3.4rem;
+      left: 5%;
+      color: rgba(189,127,130,.17);
+      content: "♡";
+      font-family: var(--display);
+      font-size: 15rem;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .love-note-inner { position: relative; max-width: 790px; margin-inline: auto; }
+    .love-note h2 { margin: .6rem 0 .3rem; color: var(--wine); font-size: clamp(3rem, 7vw, 5.6rem); line-height: 1.05; }
+    .love-note p { max-width: 620px; margin: 0 auto; color: var(--muted); font-size: 1.02rem; }
+    .future { padding-block: var(--section-space); }
+    .section-heading { max-width: 710px; margin-bottom: 2.7rem; }
+    .section-heading h2 { margin: .55rem 0 .8rem; font-size: clamp(2.7rem, 5vw, 4.4rem); letter-spacing: -.03em; line-height: 1.06; }
+    .section-heading p { max-width: 590px; margin-bottom: 0; color: var(--muted); font-size: 1.02rem; }
+    .future-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .future-card {
+      min-height: 245px;
+      padding: clamp(1.5rem, 2.4vw, 2.2rem);
+      border: 1px solid rgba(116,56,78,.1);
+      border-radius: 18px;
+      background: rgba(255,255,255,.58);
+      box-shadow: 0 8px 28px rgba(69, 44, 46, .035);
+      transition: transform .24s ease, box-shadow .24s ease;
+    }
+    .future-card:nth-child(2) { transform: translateY(1.5rem); background: rgba(244,230,225,.72); }
+    .future-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(69,44,46,.09); }
+    .future-card:nth-child(2):hover { transform: translateY(calc(1.5rem - 4px)); }
+    .card-symbol {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      margin-bottom: 1.2rem;
+      border: 1px solid rgba(116,56,78,.14);
+      border-radius: 50%;
+      color: var(--wine);
+      background: var(--paper);
+      font-family: var(--display);
+      font-size: 1.35rem;
+    }
+    .future-card h3 { margin-bottom: .55rem; font-size: 1.55rem; line-height: 1.2; }
+    .future-card p { margin-bottom: 0; color: var(--muted); font-size: .93rem; }
+    .memories {
+      padding-block: var(--section-space);
+      background: linear-gradient(180deg, rgba(244,230,225,.58), rgba(244,230,225,.21));
+      border-block: 1px solid rgba(116,56,78,.08);
+    }
+    .memories .section-heading { max-width: 760px; }
+    .gallery {
+      columns: 3 220px;
+      column-gap: 1.15rem;
+    }
+    .memory-card {
+      display: inline-block;
+      width: 100%;
+      margin: 0 0 1.15rem;
+      overflow: hidden;
+      break-inside: avoid;
+      border: 1px solid rgba(116,56,78,.11);
+      border-radius: 16px;
+      background: rgba(255,255,255,.74);
+      box-shadow: 0 9px 28px rgba(69,44,46,.055);
+      text-decoration: none;
+      transition: transform .22s ease, box-shadow .22s ease;
+    }
+    .memory-card:hover { transform: translateY(-3px); box-shadow: 0 16px 34px rgba(69,44,46,.12); }
+    .memory-card img { width: 100%; height: auto; background: var(--paper-deep); }
+    .memory-caption {
+      min-height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: .75rem;
+      padding: .55rem .85rem;
+      color: var(--wine-dark);
+      font-family: var(--display);
+      font-size: 1rem;
+      line-height: 1.3;
+    }
+    .memory-caption span:first-child {
+      color: var(--rose-dark);
+      font-family: var(--body);
+      font-size: .65rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+    }
+    .voice-section {
+      position: relative;
+      overflow: hidden;
+      padding-block: var(--section-space);
+      color: #fff8f3;
+      background:
+        radial-gradient(ellipse at 90% 15%, rgba(189,127,130,.28), transparent 25rem),
+        linear-gradient(135deg, #55283a, #74384e 58%, #684052);
+    }
+    .voice-inner { display: grid; grid-template-columns: 1fr minmax(300px, .82fr); align-items: center; gap: clamp(2rem, 7vw, 6rem); }
+    .voice-section .section-label { color: #f0c8c0; }
+    .voice-section h2 { max-width: 580px; margin: .6rem 0 1rem; font-size: clamp(2.8rem, 5vw, 4.55rem); letter-spacing: -.025em; line-height: 1.06; }
+    .voice-section p { max-width: 500px; margin-bottom: 0; color: rgba(255,248,243,.78); }
+    .audio-card {
+      padding: clamp(1.3rem, 2.4vw, 2rem);
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 20px;
+      background: rgba(255,255,255,.1);
+      box-shadow: 0 18px 48px rgba(30,12,19,.16);
+      backdrop-filter: blur(12px);
+    }
+    .audio-card-label { display: flex; align-items: center; gap: .8rem; margin-bottom: 1.1rem; }
+    .audio-icon {
+      width: 44px;
+      height: 44px;
+      display: grid;
+      flex: none;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--wine);
+      background: #f9e9e2;
+      font-family: var(--display);
+      font-size: 1.25rem;
+    }
+    .audio-card-label strong { display: block; color: white; font-size: .95rem; }
+    .audio-card-label small { display: block; color: rgba(255,248,243,.7); font-size: .78rem; }
+    audio { display: block; width: 100%; min-height: 46px; accent-color: #bd7f82; }
+    .audio-fallback { margin: .7rem 0 0; color: rgba(255,248,243,.75); font-size: .8rem; }
+    .audio-fallback a { color: #fff8f3; text-underline-offset: 3px; }
+    .proposal { padding-block: var(--section-space); }
+    .proposal-panel {
+      position: relative;
+      max-width: 950px;
+      margin-inline: auto;
+      padding: clamp(2rem, 6vw, 5.4rem);
+      overflow: hidden;
+      border: 1px solid rgba(116,56,78,.16);
+      border-radius: 26px;
+      background:
+        radial-gradient(circle at 100% 0, rgba(236,216,210,.62), transparent 23rem),
+        #fffdfa;
+      box-shadow: 0 24px 70px rgba(69,44,46,.09);
+      text-align: center;
+    }
+    .proposal-panel::after {
+      position: absolute;
+      right: -2.5rem;
+      bottom: -5.1rem;
+      color: rgba(189,127,130,.12);
+      content: "♡";
+      font-family: var(--display);
+      font-size: 17rem;
+      line-height: 1;
+      pointer-events: none;
+    }
+    .proposal-content { position: relative; z-index: 1; }
+    .proposal-panel h2 { max-width: 720px; margin: .8rem auto 1rem; color: var(--wine-dark); font-size: clamp(2.8rem, 6.3vw, 5.2rem); letter-spacing: -.035em; line-height: 1.02; }
+    .proposal-panel > .proposal-content > p { max-width: 620px; margin: 0 auto 1.8rem; color: var(--muted); font-size: 1.02rem; }
+    .answer-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: .8rem; }
+    .answer-message {
+      max-width: 630px;
+      margin: 1.4rem auto 0;
+      padding: 1rem 1.2rem;
+      border: 1px solid rgba(116,56,78,.14);
+      border-radius: 14px;
+      color: var(--wine-dark);
+      background: rgba(244,230,225,.68);
+      font-family: var(--display);
+      font-size: 1.2rem;
+      line-height: 1.45;
+    }
+    .answer-message[hidden] { display: none; }
+    .answer-footnote { margin: 1.2rem 0 0; color: var(--muted); font-size: .83rem; }
+    .site-footer {
+      padding: 1.5rem 0 2rem;
+      border-top: 1px solid rgba(116,56,78,.11);
+      color: var(--muted);
+      font-size: .82rem;
+      text-align: center;
+    }
+    .site-footer span { color: var(--wine); font-family: var(--display); font-size: 1.05rem; }
+    .back-top { display: inline-block; margin-top: .55rem; color: var(--wine); font-weight: 600; text-underline-offset: 3px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .js [data-reveal] { opacity: 0; transform: translateY(20px); transition: opacity .7s ease, transform .7s ease; }
+    .js [data-reveal].visible { opacity: 1; transform: translateY(0); }
+    @media (max-width: 880px) {
+      .hero { grid-template-columns: 1fr .95fr; gap: 2rem; }
+      h1 { font-size: clamp(3.3rem, 7.2vw, 5.4rem); }
+      .future-grid { gap: .75rem; }
+      .future-card { padding: 1.35rem; }
+      .voice-inner { grid-template-columns: 1fr minmax(270px, .9fr); gap: 2rem; }
+    }
+    @media (max-width: 700px) {
+      .shell { width: min(100% - 2rem, var(--page-width)); }
+      .header-inner { min-height: 68px; }
+      .brand { font-size: .78rem; }
+      .brand-mark { width: 35px; height: 35px; }
+      .desktop-nav { display: none; }
+      .mobile-nav { display: block; }
+      .hero { min-height: auto; grid-template-columns: 1fr; gap: 2.5rem; padding-block: 4.5rem 5rem; }
+      .hero-copy { max-width: 620px; }
+      h1 { max-width: 540px; font-size: clamp(3.65rem, 14vw, 5.8rem); }
+      .hero-visual { width: min(100%, 620px); margin-inline: auto; padding: .5rem; }
+      .hero-frame { border-radius: 18px 18px 100px 18px; }
+      .hero-ornament { top: -1rem; right: -.2rem; width: 64px; height: 64px; font-size: 1.8rem; }
+      .love-note::before { left: -2.5rem; font-size: 12rem; }
+      .future-grid { grid-template-columns: 1fr; gap: .8rem; }
+      .future-card, .future-card:nth-child(2) { min-height: auto; transform: none; }
+      .future-card:nth-child(2):hover { transform: translateY(-4px); }
+      .future-card { display: grid; grid-template-columns: 45px 1fr; column-gap: 1rem; }
+      .card-symbol { grid-row: span 2; margin: .1rem 0 0; }
+      .future-card h3 { align-self: center; }
+      .future-card p { grid-column: 2; }
+      .gallery { columns: 2 140px; column-gap: .75rem; }
+      .memory-card { margin-bottom: .75rem; border-radius: 12px; }
+      .memory-caption { min-height: 45px; padding: .45rem .55rem; font-size: .88rem; }
+      .memory-caption span:first-child { font-size: .6rem; }
+      .voice-inner { grid-template-columns: 1fr; gap: 1.7rem; }
+      .audio-card { width: 100%; }
+      .proposal-panel { border-radius: 20px; }
+      .button { min-height: 48px; }
+      .answer-actions { flex-direction: column; }
+      .answer-actions .button { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+      .js [data-reveal] { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body id="top">
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Back to the beginning">
+        <span class="brand-mark" aria-hidden="true">♡</span>
+        <span>for the one I keep choosing</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#future">Our next chapter</a>
+        <a href="#memories">Little memories</a>
+        <a href="#voice">A little note</a>
+        <a class="nav-cta" href="#the-question">The question <span aria-hidden="true">♡</span></a>
+      </nav>
+      <details class="mobile-nav">
+        <summary aria-label="Open navigation"><span aria-hidden="true">☰</span></summary>
+        <nav class="mobile-nav-panel" aria-label="Mobile navigation">
+          <a href="#future">Our next chapter</a>
+          <a href="#memories">Little memories</a>
+          <a href="#voice">A little note</a>
+          <a href="#the-question">The question ♡</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <main>
+    <section class="shell hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow">a little note for all our tomorrows</span>
+        <h1 id="hero-title">My favorite<br>future has<br><em>you in it.</em></h1>
+        <p><strong>Suzy-tan, Bou, Wify</strong>—when I picture everything still ahead, the person I want beside me is you. I love you, and I want to keep making a life together, one day at a time.</p>
+        <div class="hero-actions">
+          <a class="button" href="#the-question">Read my little question <span aria-hidden="true">♡</span></a>
+          <a class="button secondary" href="#voice">Listen to the note</a>
+        </div>
+      </div>
+      <figure class="hero-visual" data-reveal>
+        <span class="hero-ornament" aria-hidden="true">♡</span>
+        <div class="hero-frame">
+          <img src="https://cdn.websitepublisher.ai/custom/wid29756/images/hero-memory.jpg" alt="Suzy smiling in a sunlit close-up" width="1599" height="899" fetchpriority="high">
+        </div>
+        <figcaption class="hero-caption"><span aria-hidden="true">✦</span> my favorite view, in every chapter</figcaption>
+      </figure>
+    </section>
+
+    <section class="love-note" aria-labelledby="love-title">
+      <div class="shell love-note-inner" data-reveal>
+        <span class="section-label">one thing I’ll never stop saying</span>
+        <h2 id="love-title">I love you.</h2>
+        <p>In the sweet, ordinary, imperfect life of us, I would choose you again. There is so much good still waiting for us to make together.</p>
+      </div>
+    </section>
+
+    <section class="shell future" id="future" aria-labelledby="future-title">
+      <div class="section-heading" data-reveal>
+        <span class="section-label">the life I dream of</span>
+        <h2 id="future-title">All the little tomorrows.</h2>
+        <p>Not a perfect story—our story. The everyday moments, the brave plans, and the kindness we keep choosing along the way.</p>
+      </div>
+      <div class="future-grid">
+        <article class="future-card" data-reveal>
+          <span class="card-symbol" aria-hidden="true">☼</span>
+          <h3>The everyday magic</h3>
+          <p>Slow mornings, ordinary errands, and the quiet comfort of ending the day on the same team.</p>
+        </article>
+        <article class="future-card" data-reveal>
+          <span class="card-symbol" aria-hidden="true">↗</span>
+          <h3>Places still to find</h3>
+          <p>New streets, shared plans, and the kind of adventures that become stories we tell for years.</p>
+        </article>
+        <article class="future-card" data-reveal>
+          <span class="card-symbol" aria-hidden="true">✿</span>
+          <h3>A love that grows</h3>
+          <p>Learning each other more, cheering each other on, and making a home wherever we are together.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="memories" id="memories" aria-labelledby="memories-title">
+      <div class="shell">
+        <div class="section-heading" data-reveal>
+          <span class="section-label">a gallery of you</span>
+          <h2 id="memories-title">A face I could look for, in every crowd.</h2>
+          <p>These little glimpses of you make me smile. Tap a photo to see the original in full.</p>
+        </div>
+        <div class="gallery">
+          <figure class="memory-card" data-reveal>
+            <a href="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-01.jpg" target="_blank" rel="noopener" aria-label="Open original portrait of Suzy outdoors in a new tab">
+              <img src="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-01.jpg" alt="Portrait of Suzy outdoors" width="899" height="1599" loading="lazy" decoding="async">
+            </a>
+            <figcaption class="memory-caption"><span>01</span><span>just being you</span></figcaption>
+          </figure>
+          <figure class="memory-card" data-reveal>
+            <a href="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-02.jpg" target="_blank" rel="noopener" aria-label="Open original photo of Suzy in red in a new tab">
+              <img src="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-02.jpg" alt="Suzy in a red outfit" width="900" height="1600" loading="lazy" decoding="async">
+            </a>
+            <figcaption class="memory-caption"><span>02</span><span>my favorite smile</span></figcaption>
+          </figure>
+          <figure class="memory-card" data-reveal>
+            <a href="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-03.jpg" target="_blank" rel="noopener" aria-label="Open original portrait of Suzy in a new tab">
+              <img src="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-03.jpg" alt="A quiet portrait of Suzy" width="899" height="1599" loading="lazy" decoding="async">
+            </a>
+            <figcaption class="memory-caption"><span>03</span><span>every version of you</span></figcaption>
+          </figure>
+          <figure class="memory-card" data-reveal>
+            <a href="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-04.jpg" target="_blank" rel="noopener" aria-label="Open original photo of Suzy with a flower in a new tab">
+              <img src="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-04.jpg" alt="Suzy with a flower in her hair" width="1080" height="1920" loading="lazy" decoding="async">
+            </a>
+            <figcaption class="memory-caption"><span>04</span><span>a little sunshine</span></figcaption>
+          </figure>
+          <figure class="memory-card" data-reveal>
+            <a href="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-05.jpg" target="_blank" rel="noopener" aria-label="Open original sunny portrait of Suzy in a new tab">
+              <img src="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-05.jpg" alt="A sunny candid portrait of Suzy" width="1440" height="1440" loading="lazy" decoding="async">
+            </a>
+            <figcaption class="memory-caption"><span>05</span><span>my Bou, my heart</span></figcaption>
+          </figure>
+          <figure class="memory-card" data-reveal>
+            <a href="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-06.jpg" target="_blank" rel="noopener" aria-label="Open original portrait of Suzy in a new tab">
+              <img src="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-06.jpg" alt="Another portrait of Suzy" width="1080" height="1920" loading="lazy" decoding="async">
+            </a>
+            <figcaption class="memory-caption"><span>06</span><span>my Wify, my always</span></figcaption>
+          </figure>
+          <figure class="memory-card" data-reveal>
+            <a href="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-07.jpg" target="_blank" rel="noopener" aria-label="Open original candid close-up portrait of Suzy in a new tab">
+              <img src="https://cdn.websitepublisher.ai/custom/wid29756/images/memory-07.jpg" alt="A close candid portrait of Suzy" width="540" height="960" loading="lazy" decoding="async">
+            </a>
+            <figcaption class="memory-caption"><span>07</span><span>beautiful, as you are</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="voice-section" id="voice" aria-labelledby="voice-title">
+      <div class="shell voice-inner">
+        <div data-reveal>
+          <span class="section-label">saved with love</span>
+          <h2 id="voice-title">A little piece of the moment.</h2>
+          <p>A voice note, just for you. Press play whenever you have a quiet minute, and keep it close for the days you want to hear it again.</p>
+        </div>
+        <div class="audio-card" data-reveal>
+          <div class="audio-card-label">
+            <span class="audio-icon" aria-hidden="true">♫</span>
+            <span><strong>A note for my Wify</strong><small>Listen whenever you're ready</small></span>
+          </div>
+          <audio controls preload="metadata" aria-label="A voice note for Suzy-tan">
+            <source src="https://cdn.websitepublisher.ai/custom/wid29756/audio/wify-voice-note.aac" type="audio/aac">
+            Your browser does not support inline audio.
+          </audio>
+          <p class="audio-fallback">If it doesn’t play here, <a href="https://cdn.websitepublisher.ai/custom/wid29756/audio/wify-voice-note.aac" target="_blank" rel="noopener">open the original audio</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="proposal" id="the-question" aria-labelledby="question-title">
+      <div class="shell">
+        <div class="proposal-panel">
+          <div class="proposal-content" data-reveal>
+            <span class="section-label">this is me, asking again</span>
+            <h2 id="question-title">Will you choose us, all over again?</h2>
+            <p>I want the ordinary days, the big dreams, and all the in-between moments with you. I love you. Will you say yes to our next chapter—and to choosing each other, again and again?</p>
+            <div class="answer-actions">
+              <button class="button" id="answer-yes" type="button">Yes, let’s choose us <span aria-hidden="true">♡</span></button>
+              <button class="button secondary" id="answer-talk" type="button">Let’s talk about forever</button>
+            </div>
+            <p class="answer-message" id="answer-message" role="status" aria-live="polite" hidden></p>
+            <p class="answer-footnote">However you answer, I’d love to hear you say it in person. ♡</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <span>with all my heart, always ♡</span>
+      <div>Made for Suzy-tan, Bou, and Wify.</div>
+      <a class="back-top" href="#top">Back to the beginning ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var revealItems = document.querySelectorAll('[data-reveal]');
+      if (!('IntersectionObserver' in window)) {
+        for (var i = 0; i < revealItems.length; i++) revealItems[i].classList.add('visible');
+      } else {
+        var observer = new IntersectionObserver(function (entries) {
+          for (var n = 0; n < entries.length; n++) {
+            if (entries[n].isIntersecting) {
+              entries[n].target.classList.add('visible');
+              observer.unobserve(entries[n].target);
+            }
+          }
+        }, { threshold: 0.12 });
+        for (var j = 0; j < revealItems.length; j++) observer.observe(revealItems[j]);
+      }
+
+      var menu = document.querySelector('.mobile-nav');
+      var menuLinks = document.querySelectorAll('.mobile-nav-panel a');
+      for (var k = 0; k < menuLinks.length; k++) {
+        menuLinks[k].addEventListener('click', function () { menu.open = false; });
+      }
+
+      var response = document.getElementById('answer-message');
+      function showResponse(message) {
+        response.textContent = message;
+        response.hidden = false;
+      }
+      document.getElementById('answer-yes').addEventListener('click', function () {
+        showResponse('Then it’s you and me, still—and all the beautiful ordinary days ahead. I love you, Wify. ♡');
+      });
+      document.getElementById('answer-talk').addEventListener('click', function () {
+        showResponse('Of course. I want to hear every thought, at your pace. This question comes with all my love, always. ♡');
+      });
+    })();
+  </script>
+  <!-- Optimizer - Footer Javascripts -->
+</body>
+</html>
